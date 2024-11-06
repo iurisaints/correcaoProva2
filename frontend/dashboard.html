@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Sistema de Estoque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Estoque de Produtos</h1>
+    <nav>
+      <a href="index.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-form">
+      <h2>Cadastrar Produto</h2>
+      <form id="product-form">
+        <label for="product-name">Nome do Produto</label>
+        <input type="text" id="product-name" required>
+        
+        <label for="product-quantity">Quantidade</label>
+        <input type="number" id="product-quantity" required>
+        
+        <label for="product-price">Preço</label>
+        <input type="text" id="product-price" required>
+        
+        <button type="submit">Salvar Produto</button>
+      </form>
+    </section>
+
+    <section class="product-list">
+      <h2>Lista de Produtos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="product-table-body">
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
